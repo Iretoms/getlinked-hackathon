@@ -4,6 +4,7 @@ import Introduction from "../components/Introduction";
 import Judging from "../components/Judging";
 import Question from "../components/Question";
 import Rules from "../components/Rules";
+import Timeline from "../components/Timeline";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
            <Rules/> 
            <Judging/>
            <Question/>
+           <Timeline/>
         </>
     );
 };
