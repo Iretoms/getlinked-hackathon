@@ -4,6 +4,7 @@ import Introduction from "../components/Introduction";
 import Judging from "../components/Judging";
 import Partners from "../components/Partners";
 import Prices from "../components/Prices";
+import Privacy from "../components/Privacy";
 import Question from "../components/Question";
 import Rules from "../components/Rules";
 import Timeline from "../components/Timeline";
@@ -21,6 +22,7 @@ const Home = () => {
            <Timeline/>
            <Prices/>
            <Partners/>
+           <Privacy/>
         </>
     );
 };
