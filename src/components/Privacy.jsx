@@ -63,7 +63,6 @@ const Privacy = () => {
 const Section = styled.section`
   width: 100%;
   min-height: 100vh;
-  border-bottom: 0.1px solid rgba(225, 225, 225, 0.18);
   .container {
     padding: 5rem 0;
     width: 88%;
