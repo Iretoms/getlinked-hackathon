@@ -98,7 +98,7 @@ const StyledFooter = styled.footer`
 `;
 
 const About = styled.article`
-  width: 45%;
+  width: 40%;
   .logo {
     span {
       font-size: 2rem;

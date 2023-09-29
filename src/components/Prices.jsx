@@ -79,11 +79,11 @@ const Trophy = styled.div`
   width: 88%;
   margin: 0 auto;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: flex-end;
   .cupTrophy {
     img {
-      width: 28rem;
+      width: 33rem;
       height: 28rem;
     }
   }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Timeline = () => {
   return (
     <Section>
-      <div className="container">
+      <div className="container" id="timeline">
         <h1 className="title">Timeline</h1>
         <p className="subtitle">
           Here is the breakdown of the time we anticipate using for the upcoming

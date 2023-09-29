@@ -54,7 +54,7 @@ const Image = styled.article`
   div {
     z-index: -1;
     position: absolute;
-    right: 5rem;
+    right: 9rem;
     top: 5.5rem;
     width: 7rem;
     height: 7rem;

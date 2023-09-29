@@ -4,7 +4,7 @@ import manSitting from "../assets/manSitting.png";
 const Question = () => {
   return (
     <Section>
-      <div className="container">
+      <div className="container" id="faqs">
         <Text>
           <h1>Frequently Ask</h1>
           <h1>Question</h1>
@@ -102,7 +102,7 @@ const Image = styled.article`
     }
     &:nth-child(3) {
       top: -3rem;
-      right: 10rem;
+      right: 14rem;
     }
   }
   img {

@@ -51,7 +51,7 @@ const Sponsors = styled.div`
   align-items: center;
   justify-content: center;
   img {
-    width: 40rem;
+    width: 45rem;
     height: 15rem;
   }
 `;

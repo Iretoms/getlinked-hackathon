@@ -4,7 +4,7 @@ import bigBulb from "../assets/bigBulb.png";
 const Introduction = () => {
   return (
     <Section>
-      <div className="container">
+      <div className="container" id="overview">
         <Image>
           <img src={bigBulb} alt="bigBulb" />
         </Image>

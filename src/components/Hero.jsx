@@ -92,7 +92,7 @@ const Text = styled.article`
   position: relative;
   h1 {
     font-family: "Clash Display", sans-serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     span {
       color: #d434fe;
     }
@@ -115,10 +115,10 @@ const Text = styled.article`
     gap: 1.5rem;
     p {
       font-family: "Unica One", cursive;
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       span {
         font-family: "Montserrat", sans-serif;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
       }
     }
   }
@@ -128,15 +128,15 @@ const Text = styled.article`
     width: 3.5rem;
   }
   .chain {
-    right: 1.3rem;
-    top: 6rem;
+    right: 2.9rem;
+    top: 7rem;
   }
   .spark {
-    top: 7rem;
-    right: -1rem;
+    top: 8rem;
+    right: 1rem;
   }
   .bulb {
-    right: 0;
+    right: 1rem;
     top: 1rem;
   }
 `;
@@ -147,19 +147,19 @@ const Image = styled.article`
     position: absolute;
   }
   .mask_man {
-    left: -1rem;
+    left: 4.5rem;
     top: -1rem;
     width: 38rem;
     height: 32rem;
     z-index: -1;
   }
   .shiny_globe {
-    left: 3rem;
+    left: 7rem;
     width: 31rem;
     z-index: 2;
   }
   .purple_flare {
-    width: 30rem;
+    width: 31rem;
     left: 12rem;
     top: -4rem;
     z-index: 1;

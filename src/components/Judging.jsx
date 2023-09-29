@@ -86,6 +86,7 @@ const Image = styled.article`
     width: 27rem;
     height: 27rem;
     top: 6rem;
+    right: 7rem;
   }
   div {
     z-index: -1;

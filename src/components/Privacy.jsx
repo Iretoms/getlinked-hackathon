@@ -64,7 +64,7 @@ const Section = styled.section`
   width: 100%;
   min-height: 100vh;
   .container {
-    padding: 5rem 0;
+    padding: 8rem 0 7rem;
     width: 88%;
     margin: 0 auto;
     display: flex;
