@@ -16,7 +16,7 @@ const Home = () => {
         <>
            <Header/>
            <Hero/>
-           <Introduction/>
+           {/* <Introduction/>
            <Rules/> 
            <Judging/>
            <Question/>
@@ -24,7 +24,7 @@ const Home = () => {
            <Prices/>
            <Partners/>
            <Privacy/>
-           <Footer/>
+           <Footer/> */}
         </>
     );
 };

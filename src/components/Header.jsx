@@ -31,6 +31,11 @@ const Header = () => {
             </NavLink>
           </li>
         </NavList>
+        <MenuBar>
+          <span></span>
+          <span></span>
+          <span></span>
+        </MenuBar>
       </Nav>
     </StyledHeader>
   );
@@ -40,6 +45,9 @@ const StyledHeader = styled.header`
   width: 100%;
   height: 14vh;
   border-bottom: 0.1px solid rgba(225, 225, 225, 0.18);
+    @media screen and (max-width: 40rem) {
+    min-height: 10vh;
+  }
 `;
 
 const Nav = styled.nav`
@@ -59,6 +67,14 @@ const Nav = styled.nav`
       }
     }
   }
+
+   @media screen and (max-width: 40rem) {
+    .logo {
+      span {
+        font-size: 1.6rem;
+      }
+    }
+  }
 `;
 
 const NavList = styled.ul`
@@ -72,6 +88,35 @@ const NavList = styled.ul`
     &:nth-child(5) {
       margin-left: 3.5rem;
     }
+  }
+
+  @media screen and (max-width: 40rem) {
+    display: none;
+  }
+`;
+
+const MenuBar = styled.div`
+  display: none;
+  flex-direction: column;
+  width: 1.5rem;
+  height: 1rem;
+  justify-content: space-between;
+  span {
+    border-radius: 9999px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    &:nth-child(1) {
+      width: 50%;
+    }
+    &:nth-child(3) {
+      margin-left: 50%;
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 40rem) {
+    display: flex;
   }
 `;
 

@@ -86,6 +86,23 @@ const Container = styled.div`
       right: -1rem;
     }
   }
+
+   @media screen and (max-width: 40rem) {
+    flex-direction: column;
+    article {
+      width: 100%;
+    }
+    .ignite {
+      left: 0;
+      h1 {
+        font-size: 1rem;
+      }
+      img {
+        width: 9rem;
+        right: 1rem;
+      }
+    }
+  }
 `;
 
 const Text = styled.article`
@@ -139,6 +156,37 @@ const Text = styled.article`
     right: 1rem;
     top: 1rem;
   }
+
+  @media screen and (max-width: 40rem) {
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      width: 78%;
+      font-size: 0.8rem;
+      line-height: 24px;
+      margin: 1rem auto 0;
+    }
+    .buttonContainer{
+      margin: 1.5rem auto 0;
+    }
+    .timer {
+      margin: 1rem auto 0;
+    }
+    img {
+      width: 2.2rem;
+    }
+    .chain {
+      top: 4rem;
+    }
+    .spark {
+      top: 4rem;
+    }
+    .bulb{
+    top: 0;
+    }
+  }
 `;
 
 const Image = styled.article`
@@ -163,6 +211,25 @@ const Image = styled.article`
     left: 12rem;
     top: -4rem;
     z-index: 1;
+  }
+
+  @media screen and (max-width: 40rem) {
+    min-height: 26rem;
+    .mask_man{
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+    .shiny_globe {
+      width: 20rem;
+      left: 2rem;
+    }
+    .purple_flare{
+      width: 20rem;
+      top: 2rem;
+      left: 9rem;
+    }
   }
 `;
 
