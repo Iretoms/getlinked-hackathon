@@ -41,11 +41,26 @@ const Section = styled.section`
       width: 50%;
     }
   }
+
+  @media screen and (max-width: 40rem) {
+    .container {
+      flex-direction: column;
+      article {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 const Image = styled.article`
   img {
     width: 30rem;
+  }
+
+  @media screen and (max-width: 40rem) {
+    img {
+      width: 100%;
+    }
   }
 `;
 
@@ -61,6 +76,17 @@ const Text = styled.article`
     margin-top: 1rem;
     font-size: 0.8rem;
     line-height: 27.5px;
+  }
+
+  @media screen and (max-width: 40rem) {
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      width: 81%;
+      margin: 1rem auto 0;
+    }
   }
 `;
 

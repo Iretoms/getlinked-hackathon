@@ -16,11 +16,11 @@ const Home = () => {
         <>
            <Header/>
            <Hero/>
-           {/* <Introduction/>
+           <Introduction/>
            <Rules/> 
            <Judging/>
            <Question/>
-           <Timeline/>
+           {/* <Timeline/>
            <Prices/>
            <Partners/>
            <Privacy/>

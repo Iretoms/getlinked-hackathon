@@ -82,6 +82,17 @@ const Section = styled.section`
       width: 50%;
     }
   }
+
+  @media screen and (max-width: 40rem) {
+    .container {
+      padding: 4rem 0;
+      flex-direction: column;
+      gap: 6rem;
+      article {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 const Image = styled.article`
@@ -108,6 +119,29 @@ const Image = styled.article`
   img {
     width: 31rem;
     height: 31rem;
+  }
+
+  @media screen and (max-width: 40rem) {
+    h1 {
+      font-size:2.5rem;
+      &:nth-child(1){
+        font-size: 4rem;
+        left: 7rem;
+        top: -2.5rem;
+      }
+      &:nth-child(2){
+        top: 0;
+        left: 3rem;
+      }
+      &:nth-child(3){
+        top: 0;
+        right: 10rem;
+      }
+    }
+   img {
+    width: 100%;
+    height: 25rem;
+   }
   }
 `;
 
@@ -147,6 +181,33 @@ const Text = styled.article`
         }
       }
     }
+  }
+
+  @media screen and (max-width: 40rem) {
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+   p {
+    &.weGot{
+      text-align: center;
+      width: 100%;
+    }
+   }
+   .questions {
+    width: 100%;
+    .question {
+      p {
+        gap: 3rem;
+        line-height: 20px;
+        span {
+          &:nth-child(2){
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+   }
   }
 `;
 

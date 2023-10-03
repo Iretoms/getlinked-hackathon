@@ -43,6 +43,17 @@ const Section = styled.section`
       width: 50%;
     }
   }
+
+  @media screen and (max-width: 40rem) {
+   .container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    article {
+      width: 100%;
+    }
+   }
+  }
 `;
 
 const Image = styled.article`
@@ -60,6 +71,19 @@ const Image = styled.article`
     height: 7rem;
     border-radius: 50%;
     background-image: linear-gradient(to right, #d434fe 30%, #903aff);
+  }
+
+  @media screen and (max-width: 40rem) {
+    img {
+      width: 100%;
+      height: 28rem;
+    }
+    div{
+      width: 5rem;
+      height: 5rem;
+      right: 5rem;
+      top:5rem;
+    }
   }
 `;
 
@@ -83,6 +107,22 @@ const Text = styled.article`
     margin-top: 1rem;
     font-size: 0.8rem;
     line-height: 27.5px;
+  }
+
+  @media screen and (max-width: 40rem) {
+    text-align: center;
+    img {
+      left: 0;
+      width: 20rem;
+      top: -35rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      width: 81%;
+      margin: 1rem auto 0;
+    }
   }
 `;
 
