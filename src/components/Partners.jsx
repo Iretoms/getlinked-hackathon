@@ -39,6 +39,18 @@ const Section = styled.section`
       text-align: center;
     }
   }
+
+  @media screen and (max-width: 40rem) {
+    min-height: 45vh;
+    .container {
+      .title {
+        font-size: 1.5rem;
+      }
+      .subtitle {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 const Sponsors = styled.div`
@@ -53,6 +65,14 @@ const Sponsors = styled.div`
   img {
     width: 45rem;
     height: 15rem;
+  }
+
+  @media screen and (max-width: 40rem) {
+    padding: 2rem 0;
+    img {
+      height: 6rem;
+      width: 17rem;
+    }
   }
 `;
 

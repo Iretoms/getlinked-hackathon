@@ -20,11 +20,11 @@ const Home = () => {
            <Rules/> 
            <Judging/>
            <Question/>
-           {/* <Timeline/>
+           <Timeline/>
            <Prices/>
            <Partners/>
            <Privacy/>
-           <Footer/> */}
+           <Footer/>
         </>
     );
 };

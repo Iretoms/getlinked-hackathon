@@ -73,6 +73,22 @@ const Section = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 40rem) {
+    .title {
+      justify-content: center;
+      div {
+        width: 100%;
+        text-align: center;
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
 `;
 
 const Trophy = styled.div`
@@ -124,6 +140,44 @@ const Trophy = styled.div`
         .price {
           margin-top: 1rem;
           color: #903aff;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 40rem) {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    .cupTrophy {
+      img {
+        width: 100%;
+        height: 22rem;
+      }
+    }
+    .medals {
+      .medal {
+        width: 6.5rem;
+        height: 10rem;
+        border-radius: 10px;
+        padding-top: 4rem;
+        img {
+          width: 6rem;
+          height: 6rem;
+          top: -2.5rem;
+          right: 0.2rem;
+        }
+        .price {
+          font-size: 1rem;
+        }
+        &:nth-child(2) {
+          padding-top: 3.5rem;
+          img {
+            width: 9rem;
+            height: 9rem;
+            top: -6rem;
+            right: -1.3rem;
+          }
         }
       }
     }

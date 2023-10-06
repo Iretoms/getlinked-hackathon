@@ -95,6 +95,13 @@ const StyledFooter = styled.footer`
     text-align: center;
     margin-top: 2rem;
   }
+
+  @media screen and (max-width: 40rem) {
+    .container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
 `;
 
 const About = styled.article`
@@ -128,6 +135,10 @@ const About = styled.article`
       }
     }
   }
+
+  @media screen and (max-width: 40rem) {
+    width: 90%;
+  }
 `;
 
 const Links = styled.article`
@@ -157,6 +168,10 @@ const Links = styled.article`
       }
     }
   }
+
+  @media screen and (max-width: 40rem) {
+    width: 90%;
+  }
 `;
 
 const Contact = styled.article`
@@ -178,6 +193,9 @@ const Contact = styled.article`
         font-size: 0.8rem;
       }
     }
+  }
+  @media screen and (max-width: 40rem) {
+    width: 50%;
   }
 `;
 

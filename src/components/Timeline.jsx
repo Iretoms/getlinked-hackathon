@@ -92,6 +92,89 @@ const Timeline = () => {
             </div>
           </div>
         </StyledTimeline>
+        <MobileTimeline>
+          <div className="timeline">
+            <div className="lineNumber">
+              <div className="line"></div>
+              <div className="number">1</div>
+            </div>
+            <div className="info">
+              <p>Hackathon Announcement</p>
+              <p>
+                The getlinked tech hackathon 1.0 is formally announced to the
+                general public and teams begin to get ready to register
+              </p>
+              <p>November 18, 2023</p>
+            </div>
+          </div>
+          <div className="timeline">
+            <div className="lineNumber">
+              <div className="line"></div>
+              <div className="number">2</div>
+            </div>
+            <div className="info">
+              <p>Teams Registration begins</p>
+              <p>
+                Interested team can now show their interest in the getlinked
+                tech hackathon 1.0 2023 by proceeding to register
+              </p>
+              <p>November 18, 2023</p>
+            </div>
+          </div>
+          <div className="timeline">
+            <div className="lineNumber">
+              <div className="line"></div>
+              <div className="number">3</div>
+            </div>
+            <div className="info">
+              <p>Teams Registration ends</p>
+              <p>Interested participants are no longer Allowed to register</p>
+              <p>November 18, 2023</p>
+            </div>
+          </div>
+          <div className="timeline">
+            <div className="lineNumber">
+              <div className="line"></div>
+              <div className="number">4</div>
+            </div>
+            <div className="info">
+              <p>Announcement of accepted teams and ideas</p>
+              <p>
+                All teams whom idea has been accepted into getlinked tech
+                hackathon 1.0 2023 are formally announced
+              </p>
+              <p>November 18, 2023</p>
+            </div>
+          </div>
+          <div className="timeline">
+            <div className="lineNumber">
+              <div className="line"></div>
+              <div className="number">5</div>
+            </div>
+            <div className="info">
+              <p>Getlinked Hackathon 1.0 Officially Begins</p>
+              <p>
+                Accepted teams can now proceed to build their ground breaking
+                skill driven solutions
+              </p>
+              <p>November 18, 2023</p>
+            </div>
+          </div>
+          <div className="timeline">
+            <div className="lineNumber">
+              <div className="line"></div>
+              <div className="number">6</div>
+            </div>
+            <div className="info">
+              <p>Demo Day</p>
+              <p>
+                Teams get the opportunity to pitch their projects to judges. The
+                winner of the hackathon will also be announced on this day
+              </p>
+              <p>November 18, 2023</p>
+            </div>
+          </div>
+        </MobileTimeline>
       </div>
     </Section>
   );
@@ -116,6 +199,17 @@ const Section = styled.section`
       font-size: 0.8rem;
       line-height: 27.5px;
       text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 40rem) {
+    .container {
+      .title {
+        font-size: 1.5rem;
+      }
+      .subtitle {
+        width: 100%;
+      }
     }
   }
 `;
@@ -162,6 +256,60 @@ const StyledTimeline = styled.div`
         text-align: left;
       }
     }
+  }
+
+  @media screen and (max-width: 40rem) {
+    display: none;
+  }
+`;
+
+const MobileTimeline = styled.div`
+  margin-top: 3rem;
+  .timeline {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    .lineNumber {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      .line {
+        background-color: #d434fe;
+        height: 5.7rem;
+        width: 3px;
+      }
+      .number {
+        font-size: 0.8rem;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #d434fe 30%, #903aff);
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .info {
+      p {
+        font-size: 0.9rem;
+        &:nth-child(odd) {
+          color: #d434fe;
+          font-weight: bold;
+        }
+        &:nth-child(1) {
+          margin-bottom: 0.5rem;
+        }
+        &:nth-child(2) {
+          margin-bottom: 0.5rem;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 40rem) {
+    display: none;
   }
 `;
 

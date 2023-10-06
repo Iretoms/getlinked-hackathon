@@ -74,6 +74,18 @@ const Section = styled.section`
       width: 50%;
     }
   }
+
+  @media screen and (max-width: 40rem) {
+    .container {
+      padding: 4rem 0;
+      gap: 8rem;
+      flex-direction: column;
+      align-items: center;
+      article {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 const Text = styled.article`
@@ -141,6 +153,20 @@ const Text = styled.article`
       width: max-content;
     }
   }
+
+  @media screen and (max-width: 40rem) {
+    .title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .subtitle {
+      width: 100%;
+      text-align: center;
+    }
+    .policy {
+      padding: 2rem;
+    }
+  }
 `;
 
 const Image = styled.article`
@@ -155,6 +181,17 @@ const Image = styled.article`
       left: 4rem;
       width: 28rem;
       height: 30rem;
+    }
+  }
+
+  @media screen and (max-width: 40rem) {
+    img {
+      width: 100%;
+      height: 25rem;
+      &:nth-child(2) {
+        width: 18rem;
+        height: 22rem;
+      }
     }
   }
 `;
