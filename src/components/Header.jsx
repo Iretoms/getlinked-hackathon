@@ -1,8 +1,16 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 
 const Header = () => {
+  const [menu, setMenu] = useState(false);
+  const menuHandler = () => {
+    setMenu(!menu);
+  };
+  const closeMenu = () => {
+    setMenu(false);
+  };
   return (
     <StyledHeader>
       <Nav>
@@ -31,12 +39,33 @@ const Header = () => {
             </NavLink>
           </li>
         </NavList>
-        <MenuBar>
+        <MenuBar className={menu && "active"} onClick={menuHandler}>
           <span></span>
           <span></span>
           <span></span>
         </MenuBar>
       </Nav>
+      <MobileNav className={!menu && "active"}>
+        <ul>
+          <li onClick={closeMenu}>
+            <a href="#timeline">Timeline</a>
+          </li>
+          <li onClick={closeMenu}>
+            <a href="#overview">Overview</a>
+          </li>
+          <li onClick={closeMenu}>
+            <a href="#faqs">FAQs</a>
+          </li>
+          <li onClick={closeMenu}>
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
+          <li onClick={closeMenu}>
+            <NavLink to="/register">
+              <Button name="Register" />
+            </NavLink>
+          </li>
+        </ul>
+      </MobileNav>
     </StyledHeader>
   );
 };
@@ -45,7 +74,7 @@ const StyledHeader = styled.header`
   width: 100%;
   height: 14vh;
   border-bottom: 0.1px solid rgba(225, 225, 225, 0.18);
-    @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 40rem) {
     min-height: 10vh;
   }
 `;
@@ -68,7 +97,7 @@ const Nav = styled.nav`
     }
   }
 
-   @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 40rem) {
     .logo {
       span {
         font-size: 1.6rem;
@@ -96,6 +125,7 @@ const NavList = styled.ul`
 `;
 
 const MenuBar = styled.div`
+  z-index: 20;
   display: none;
   flex-direction: column;
   width: 1.5rem;
@@ -115,8 +145,49 @@ const MenuBar = styled.div`
     }
   }
 
+  &.active {
+    transform: rotate(45deg);
+    span {
+      &:nth-child(1) {
+        transform-origin: right;
+        transform: translateY(6px) rotate(90deg);
+      }
+      &:nth-child(3) {
+        transform-origin: left;
+        transform: translateY(-6px) rotate(90deg);
+      }
+    }
+  }
+
   @media screen and (max-width: 40rem) {
     display: flex;
+  }
+`;
+
+const MobileNav = styled.div`
+  z-index: 10;
+  background-color: #150e28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &.active {
+    transform: translateX(100%);
+  }
+  @media screen and (min-width: 40rem) {
+    display: none;
   }
 `;
 
